@@ -1,4 +1,11 @@
 {
+  "name": "webservicesproject",
+  "version": "1.0.0",
+  "description": "It does something eventually",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": "^4.18.2"
   }
