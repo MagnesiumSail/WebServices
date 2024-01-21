@@ -1,0 +1,10 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/1
+###
+GET http://localhost:3000/contacts/2
+###
+GET http://localhost:3000/contacts/3
+###
