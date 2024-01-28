@@ -16,4 +16,16 @@ router.get("/contacts/:id", (req, res) => {
     contacts.getAContact(req, res);
 });
 
+router.post("/contacts", (req, res) => {
+    contacts.createContact(req, res);
+});
+
+router.put("/contacts/:id", (req, res) => {
+    contacts.updateContact(req, res);
+});
+
+router.delete("/contacts/:id", (req, res) => {
+    contacts.deleteContact(req, res);
+});
+
 module.exports = router;

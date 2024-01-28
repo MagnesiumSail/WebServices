@@ -8,3 +8,30 @@ GET http://localhost:3000/contacts/2
 ###
 GET http://localhost:3000/contacts/3
 ###
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Mickey",
+  "lastName": "Mouse",
+  "email": "Mmouse@gmail.com",
+  "favoriteColor": "Black",
+  "birthday": "11/18/1928",
+  "contactListing": 6
+}
+###
+PUT http://localhost:3000/contacts/5
+Content-Type: application/json
+
+{
+  "firstName": "Michael",
+  "lastName": "Angel0",
+  "email": "Mangelo@gmail.com",
+  "favoriteColor": "White",
+  "birthday": "5/5/1475", //updating birthday
+  "contactListing": 5
+}
+###
+//delete micket moouse
+DELETE http://localhost:3000/contacts/6
+###
