@@ -17,7 +17,7 @@ Content-Type: application/json
   "email": "Mmouse@gmail.com",
   "favoriteColor": "Black",
   "birthday": "11/18/1928",
-  "contactListing": 6
+  "contactListing": 4
 }
 ###
 PUT http://localhost:3000/contacts/5
@@ -28,10 +28,10 @@ Content-Type: application/json
   "lastName": "Angel0",
   "email": "Mangelo@gmail.com",
   "favoriteColor": "White",
-  "birthday": "5/5/1475", //updating birthday
+  "birthday": "12/6/2000",
   "contactListing": 5
 }
 ###
 //delete micket moouse
-DELETE http://localhost:3000/contacts/6
+DELETE http://localhost:3000/contacts/4
 ###
