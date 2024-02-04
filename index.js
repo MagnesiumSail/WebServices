@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger_output.json');
+const cors = require('cors');
 
 const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -12,6 +13,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.error('Could not connect to MongoDB...', err));
 
 app.use(express.json());
+app.use(cors());
 
 app.use('/', router);
 
